@@ -14,6 +14,9 @@ const Home = () => {
                 <FaFacebookSquare />
                 </div>
             </div>
+
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ab perspiciatis itaque amet explicabo pariatur nostrum, ducimus nam. Porro sunt adipisci accusamus beatae nisi eos nulla, rerum aspernatur? Minima, modi.</p>
             
         </div>
     );
