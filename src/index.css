@@ -1,0 +1,53 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+
+    /* =======================================
+
+
+        1. common css
+        2. reuseable css
+
+    
+    
+    ==========================================*/
+
+
+    /* 1. common css 
+    ------------------------- */
+    /* font-family: "Lato", sans-serif;
+    font-family: "Playfair Display", serif; */
+    body {
+        @apply font-[Lato] m-0 p-0 box-border text-base 
+    }
+    h1, h2, h3, h4, h6, h5 {
+        @apply font-[Playfair_Display] 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
