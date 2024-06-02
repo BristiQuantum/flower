@@ -23,7 +23,7 @@ const BestColection = () => {
 
 
     return (
-        <div className="py-24 px-2 lg:px-20 2xl:px-32">
+        <div className="pt-24 px-2 lg:px-20 2xl:px-32">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-4 sm:space-y-0">
                 <h2>Best Collection</h2>
 
@@ -90,7 +90,7 @@ const BestColection = () => {
                             </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>npm 
+                    <SwiperSlide>
                         <div className="rounded-2xl w-fit p-9 relative ">
                             <div className="w-36 md:w-52 h-60 md:h-72 mb-5">
                                 <img src={c1} alt="" />
