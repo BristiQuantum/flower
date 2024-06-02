@@ -1,30 +1,18 @@
-import { FaFacebookSquare } from "react-icons/fa";
-import { GrInstagram } from "react-icons/gr";
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
+
 
 const Home = () => {
   return (
-    <div className="home px-32 py-24 flex justify-end items-end">
-      <div className="">
-        <h6>Follow Us on </h6>
+    <div className="home px-2 sm:px-8 md:px-32 pt-24 pb-5 flex justify-end items-end">
+      <div className="flex items-center gap-2">
+        <h6 className="header-title">Follow Us on </h6>
 
-        <div className="">
-          <GrInstagram />
-          <FaFacebookSquare />
+        <div className="flex items-center gap-2">
+        <FaInstagram className="bg-[#8B1128] text-white text-3xl p-1 rounded-full transition-all ease-in-out hover:bg-transparent hover:text-[#8B1128] border-2 border-[#8B1128] duration-300"/>
+          <FaFacebookSquare className="bg-[#8B1128] text-white text-3xl p-1 rounded-full transition-all ease-in-out hover:bg-transparent hover:text-[#8B1128] border-2 border-[#8B1128] duration-300"/>
         </div>
       </div>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor vero
-        veniam iste molestias vitae. Cupiditate, iste inventore placeat
-        perspiciatis dolor sapiente, nihil est dolore temporibus voluptates
-        magnam? Alias, ex illum? Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Nisi eum mollitia, atque sapiente alias blanditiis.
-        Sapiente sit aut dicta facilis eum nemo aperiam, nisi pariatur, nam,
-        sunt ad a assumenda. Lorem ipsum dolor sit amet consectetur, adipisicing
-        elit. Dignissimos adipisci, quaerat mollitia sit magnam enim eos nobis,
-        omnis magni repudiandae quisquam quod sapiente accusantium odit beatae,
-        ratione consectetur deserunt possimus!
-      </p>
     </div>
   );
 };
