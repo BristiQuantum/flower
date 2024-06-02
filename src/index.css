@@ -24,7 +24,7 @@ body {
   /* font-family: "Lato", sans-serif;
     font-family: "Playfair Display", serif; */
   body {
-    @apply font-[Lato] m-0 p-0 box-border text-base bg-[#FFF6F6] text-[#646464];
+    @apply font-[Lato] m-0 p-0 box-border text-base bg-[#F5D1D3] text-[#646464];
   }
   .header-title {
     @apply font-['Playfair_Display',_serif];
@@ -33,40 +33,25 @@ body {
   /* 2. reuseable css 
     -------------------------- */
 
-    h6 {
-        @apply text-sm 
-    }
-    h2 {
-        @apply text-3xl md:text-4xl font-bold text-[#8B1128] header-title
-    }
-    h3 {
-        @apply text-sm md:text-lg font-bold text-[#8B1128] header-title
-    }
-    h4 {
-        @apply text-xs sm:text-base font-bold text-[#8B1128] header-title
-    }
-    .btn-not-fill {
-        @apply border-2 border-[#8B1128] text-[#8B1128] font-semibold header-title text-xs sm:text-sm py-2 px-7 transition-all ease-in-out hover:bg-[#8B1128] hover:text-white duration-300
-    }
-    .badge-best {
-        @apply bg-[#8B1128] text-white  text-[11px] md:text-xs w-9 sm:w-12 h-9 sm:h-12 p-3 rounded-full flex justify-center items-center header-title absolute top-0 right-0
-    }
-    .badge-new {
-        @apply badge-best bg-[#F77794]
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  h6 {
+    @apply text-sm;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl font-bold text-[#8B1128] header-title;
+  }
+  h3 {
+    @apply text-sm md:text-lg font-bold text-[#8B1128] header-title;
+  }
+  h4 {
+    @apply text-xs sm:text-base font-bold text-[#8B1128] header-title;
+  }
+  .btn-not-fill {
+    @apply border-2 border-[#8B1128] text-[#8B1128] font-semibold header-title text-xs sm:text-sm py-2 px-7 transition-all ease-in-out hover:bg-[#8B1128] hover:text-white duration-300;
+  }
+  .badge-best {
+    @apply bg-[#8B1128] text-white  text-[11px] md:text-xs w-9 sm:w-12 h-9 sm:h-12 p-3 rounded-full flex justify-center items-center header-title absolute top-0 right-0;
+  }
+  .badge-new {
+    @apply badge-best bg-[#F77794];
+  }
 }
