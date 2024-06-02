@@ -5,6 +5,8 @@
         2. reuseable css
         3. home
         4. collection
+        5. about
+        6. best selling flower
 
     
     
@@ -19,6 +21,9 @@
 
 /* 2. reuseable css 
     -------------------------- */
+    h2 {
+        line-height: 1.3 !important;
+    }
 h6 {
     position: relative;
 }
@@ -73,3 +78,59 @@ h6::before {
         padding: 45px 3px;
     }
 }
+
+
+/* best selling flowers 
+----------------------------------------------- */
+.best-selling{
+    position: relative;
+}
+.best-selling::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -100px;
+    width: 32%; 
+    height: 100%; 
+    background-image: url('./assets/grafix/lraf-rose.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+
+@media (max-width: 1095px) {
+    .best-selling::before{
+        top: -50px;
+        width: 38%; 
+        
+    }
+}
+@media (max-width: 640px) {
+    .best-selling::before{
+        width: 60%; 
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
