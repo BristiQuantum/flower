@@ -90,7 +90,7 @@ const BestColection = () => {
                             </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide>npm 
                         <div className="rounded-2xl w-fit p-9 relative ">
                             <div className="w-36 md:w-52 h-60 md:h-72 mb-5">
                                 <img src={c1} alt="" />

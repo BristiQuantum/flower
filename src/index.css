@@ -1,16 +1,15 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+  background: white;
+}
 
 @layer components {
-
-    /* =======================================
+  /* =======================================
 
 
         1. common css
@@ -20,21 +19,20 @@
     
     ==========================================*/
 
-
-    /* 1. common css 
+  /* 1. common css 
     ------------------------- */
-    /* font-family: "Lato", sans-serif;
+  /* font-family: "Lato", sans-serif;
     font-family: "Playfair Display", serif; */
-    body {
-        @apply font-[Lato] m-0 p-0 box-border text-base bg-[#FFF6F6] text-[#646464]
-    }
-    .header-title {
-        @apply font-['Playfair_Display',_serif]
-    }
+  body {
+    @apply font-[Lato] m-0 p-0 box-border text-base bg-[#FFF6F6] text-[#646464];
+  }
+  .header-title {
+    @apply font-['Playfair_Display',_serif];
+  }
 
-
-    /* 2. reuseable css 
+  /* 2. reuseable css 
     -------------------------- */
+
     h6 {
         @apply text-sm 
     }
@@ -72,5 +70,3 @@
 
 
 }
-
-
