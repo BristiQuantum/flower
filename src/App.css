@@ -1,14 +1,66 @@
+/* =======================================
+
+
+        1. common css
+        2. reuseable css
+        3. home
+        4. collection
+
+    
+    
+    ==========================================*/
+
+/* 1. common css 
+    ------------------------- */
 
 
 
 
 
+/* 2. reuseable css 
+    -------------------------- */
+h6 {
+    position: relative;
+}
+
+h6::before {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 2px;
+    background-color: #8B1128;
+    top: 50%;
+    transform: translate(-50% -100%);
+    right: 110%;
+
+}
+
+@media (max-width: 400px) {
+    h6::before {
+        width: 90px;
+    }
+}
 
 
+/* 3. home 
+----------------------- */
 .home {
     width: 100%;
     height: 100vh;
     background-image: url('./assets//bg/bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+}
+
+
+/* 4. collection 
+----------------------------- */
+
+.swiper {
+    padding: 45px 35px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: #8B1128;
 }
