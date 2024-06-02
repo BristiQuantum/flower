@@ -60,7 +60,16 @@ h6::before {
 .swiper {
     padding: 45px 35px;
 }
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
 .swiper-button-prev,
 .swiper-button-next {
     color: #8B1128;
+}
+@media (max-width: 1024px) {
+    .swiper {
+        padding: 45px 3px;
+    }
 }
