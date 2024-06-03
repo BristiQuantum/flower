@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 @tailwind base;
@@ -24,7 +26,7 @@ body {
   /* font-family: "Lato", sans-serif;
     font-family: "Playfair Display", serif; */
   body {
-    @apply font-[Lato] m-0 p-0 box-border text-base bg-[#F5D1D3] text-[#646464];
+    @apply font-[Lato] m-0 p-0 box-border text-base bg-[#fae5e6] text-[#646464];
   }
   .header-title {
     @apply font-['Playfair_Display',_serif];
@@ -60,8 +62,16 @@ body {
 
 
 
+    /* nav bar 
+    ---------------------- */
+    .navbar{
+      @apply header-title font-semibold
+    }
+    .logo {
+      @apply font-['Tangerine',_cursive];
+    }
 
-
+    
 
 
 
