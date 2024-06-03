@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import NavCart from "../../CartPage/NavCart";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false)
+  const [cart, setCart] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,11 +60,17 @@ const NavBar = () => {
         <button className="btn btn-ghost btn-circle">
           <FaUser className="text-xl" />
         </button>
-        <button className="btn btn-ghost btn-circle">
+        <button onClick={() => setCart(!cart)} className="btn btn-ghost btn-circle">
           <div className="indicator">
             <FaShoppingCart className="text-xl" />
           </div>
         </button>
+      </div>
+
+
+      {/* cart content  */}
+      <div className={`absolute right-0 top-16 ${cart ? 'block' : 'hidden'}`}>
+        <NavCart></NavCart>
       </div>
     </div>
   );
