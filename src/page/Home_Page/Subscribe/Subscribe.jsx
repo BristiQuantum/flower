@@ -2,7 +2,7 @@
 
 const Subscribe = () => {
     return (
-        <div className="px-2 lg:px-20 2xl:px-32 py-12 bg-[#eababa]">
+        <div className="px-2 lg:px-20 2xl:px-32 py-16 bg-[#eababa]">
             <div className="flex flex-col lg:flex-row lg:items-center gap-9 ">
                 <h2 className="">join us for get offers ! <br />
                 subscribe now

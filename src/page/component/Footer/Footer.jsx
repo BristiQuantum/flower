@@ -5,7 +5,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div className="bg-[#fae5e6] py-10">
+    <div className="bg-[#fae5e6] py-10 footer-bg">
       <footer className="footer px-8 bg-[#fae5e6] text-base-content">
         <aside>
           <h3>Contact Us</h3>

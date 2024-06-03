@@ -1,0 +1,35 @@
+.hg1,
+.hg2,
+.hg3 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.hg1 {
+    width: 65px;
+    height: 65px;
+    top: 60%;
+    left: -26px;
+    
+    position: fixed;
+    z-index: 50;
+
+}
+
+.hg2 {
+    width: 65px;
+    height: 65px;
+    top: 50%;
+    left: 0;
+    position: fixed;
+    z-index: 50;
+
+}
+
+.hg3 {
+    top: 0;
+    left: 20%;
+}
+
+
