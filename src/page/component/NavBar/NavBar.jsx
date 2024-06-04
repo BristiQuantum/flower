@@ -29,20 +29,20 @@ const NavBar = () => {
 
   const navList = (
     <>
-      <li><Link to="/" className="pl-5 text-2xl lg:text-base py-5 transition-all ease-in-out hover:text-[#EC4899]">Home</Link></li>
-      <li><Link to="/" className="pl-5 text-2xl lg:text-base py-5 transition-all ease-in-out hover:text-[#EC4899]">All Flowers</Link></li>
-      <li><Link to="/cart" className="pl-5 text-2xl lg:text-base py-5 transition-all ease-in-out hover:text-[#EC4899] " >Cart</Link></li>
+      <li><Link to="/" className="navbar-links">Home</Link></li>
+      <li><Link to="/all-flower" className="navbar-links">All Flowers</Link></li>
+      <li><Link to="/cart" className="navbar-links" >Cart</Link></li>
     </>
   );
 
   return (
-    <div id="navbar" className="navbar fixed top-0 z-50 w-full px-2 lg:px-16 2xl:px-20 bg-transparent text-[#911C32] transition-colors duration-300">
+    <div id="navbar" className="navbar">
       <div className="navbar-start">
         <div className="dropdown">
           <div onClick={() => setOpen(!open)} tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </div>
-          <ul onClick={() => setOpen(!open)} tabIndex={0} className={`menu h-72 bg-[#F6D1D3] menu-sm dropdown-content mt-3 z-[1] shadow rounded-box w-52 ${open ? 'block' : 'hidden'}`}>
+          <ul onClick={() => setOpen(!open)} tabIndex={0} className={`menu-icon ${open ? 'block' : 'hidden'}`}>
             {navList}
           </ul>
         </div>
@@ -51,9 +51,10 @@ const NavBar = () => {
           {navList}
         </ul>
       </div>
+
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <a className="font-extrabold text-xl logo">PetalPlay</a>
+          <Link to="/" className="logo">PetalPlay</Link>
         </ul>
       </div>
 

@@ -5,7 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 
 const MainCart = () => {
     return (
-        <div className='px-2 md:px-16 lg:px-32 py-24 bg-[#EABABA]'>
+        <div className='cart'>
 
             <div className="border-b pb-2 ">
                 <h2>Shoping Cart :</h2>
@@ -13,14 +13,14 @@ const MainCart = () => {
 
 
 
-            <div className="flex flex-col xl:flex-row gap-7 xl:gap-0 mt-5 xl:mt-0">
+            <div className="cart-flex">
                 {/* cart table 
                 ------------------------- */}
                 <div className=" xl:mx-10  md:w-1/2 xl:w-full">
                     <table className="block sm:table ">
                         {/* head */}
                         <thead className=' text-[10px] sm:text-sm font-bold '>
-                            <tr className='border-b-[#8B1128] flex gap-4 items-center justify-end  '>
+                            <tr className='cart-tr'>
                                 <th></th>
                                 <th></th>
                                 <th>Product</th>
@@ -31,7 +31,7 @@ const MainCart = () => {
                         </thead>
                         <tbody>
                             {/* row 1 */}
-                            <tr className='border-b-[#8B1128] flex gap-4 items-center sm:block'>
+                            <tr className='cart-tr'>
                                 <td>
                                     <RxCross2 className='text-[#8B1128] sm:text-xl' />
                                 </td>
@@ -41,22 +41,22 @@ const MainCart = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <h3 className='text-[#8B1128] text-xs sn:text-sm text-nowrap'>Tuilip Rose </h3>
+                                    <h3 className='cart-title'>Tuilip Rose </h3>
                                 </td>
                                 <td>
-                                    <p className='font-bold text-xs sm:text-base'>$56</p>
+                                    <p className='cart-text'>$56</p>
                                 </td>
                                 <td>
-                                    <p className='font-bold border text-xs sm:text-base w-fit p-2 border-[#8B1128]'>2</p>
+                                    <p className='cart-q'>2</p>
                                 </td>
                                 <td>
-                                    <p className='font-bold text-xs sm:text-base'>$112</p>
+                                    <p className='cart-text'>$112</p>
                                 </td>
                             </tr>
 
 
                             {/* row 2 */}
-                            <tr className='border-b-[#8B1128] flex gap-4 items-center sm:block'>
+                            <tr className='flex gap-4 items-center justify-end'>
                                 <td>
                                     <RxCross2 className='text-[#8B1128] sm:text-xl' />
                                 </td>
@@ -66,16 +66,16 @@ const MainCart = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <h3 className='text-[#8B1128] text-xs sn:text-sm  text-nowrap'>Flower Title </h3>
+                                    <h3 className='cart-title'>Flower Title </h3>
                                 </td>
                                 <td>
-                                    <p className='font-bold text-xs sm:text-base'>$65</p>
+                                    <p className='cart-text'>$65</p>
                                 </td>
                                 <td>
-                                    <p className='font-bold text-xs sm:text-base border w-fit p-2 border-[#8B1128]'>3</p>
+                                    <p className='cart-q'>3</p>
                                 </td>
                                 <td>
-                                    <p className='font-bold text-xs sm:text-base'>$95</p>
+                                    <p className='cart-text'>$95</p>
                                 </td>
                             </tr>
 
@@ -85,37 +85,37 @@ const MainCart = () => {
                     </table>
                 </div>
 
-                <div className="divider lg:divider-horizontal hidden xl:block"></div>
+                <div className="cart-devider"></div>
 
                 {/* checkout option 
                 -------------------- */}
                 <div className="xl:mx-10 md:w-3/4 xl:w-full">
-                    <h2 className='py-4 border-b border-b-[#911C32] '>Cart Total</h2>
+                    <h2 className='cart-total'>Cart Total</h2>
 
-                    <div className="py-4 border-b border-b-[#911C32] flex justify-between">
+                    <div className="sub">
                         <h3>Subtotal</h3>
                         <p className='font-bold'>$307</p>
                     </div>
 
-                    <div className="py-4 border-b border-b-[#911C32] flex justify-between">
+                    <div className="shipping">
                         <h3>Shipping</h3>
 
-                        <div className="flex flex-col items-end text-sm font-semibold">
-                            <div className="flex  items-center gap-1">
+                        <div className="shipping-content">
+                            <div className="shipping-raio">
                                 <span>Free shippping</span>
                                 <input type="radio" name="radio" id="" checked />
                             </div>
-                            <div className="flex items-center gap-1">
+                            <div className="shipping-raio">
                                 <span>Flat rate: $10</span>
                                 <input type="radio" name="radio" id="" />
                             </div>
-                            <div className="flex items-center gap-1">
+                            <div className="shipping-raio">
                                 <span>Pickup: $15</span>
                                 <input type="radio" name="radio" id="" />
                             </div>
 
-                            <p className='py-2 font-light'>Shipping option will be updated during checkout</p>
-                            <p className='border-b border-b-[#911C32] hover:text-[#911C32] pb-1'>calculate shipping</p>
+                            <p className='py-2 font-light text-right'>Shipping option will be updated during checkout</p>
+                            <p className='calculate'>calculate shipping</p>
                         </div>
                     </div>
 
@@ -127,7 +127,7 @@ const MainCart = () => {
 
                     </div>
 
-                    <div className="w-full text-right mt-12 pr-5 sm:pr-0">
+                    <div className="cart-button">
                         <button className="btn-fill w-full "> Process To Chectout</button>
                     </div>
 
