@@ -6,16 +6,14 @@ import Subscribe from "./Subscribe/Subscribe";
 
 
 const Home_Page = () => {
-   
-
     return (
-       <div className="">
-        <Home></Home>
-        <BestColection></BestColection>
-        <About></About>
-        <BestSelling></BestSelling>
-        <Subscribe></Subscribe>
-       </div>
+        <div className="">
+            <Home></Home>
+            <BestColection></BestColection>
+            <About></About>
+            <BestSelling></BestSelling>
+            <Subscribe></Subscribe>
+        </div>
     );
 };
 

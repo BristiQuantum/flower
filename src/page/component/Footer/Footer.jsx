@@ -100,6 +100,7 @@ const Footer = () => {
           </div>
         </nav>
       </footer>
+      
       <h4 className="copyrighr">
         Copyright © 2006 - 2024 Bristi Online Ltd. All Rights Reserved. Bristi
         Online ltd, Flowers HQ, Mirpur 12, Dhaka 1212
