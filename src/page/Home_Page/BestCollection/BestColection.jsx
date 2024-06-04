@@ -31,14 +31,16 @@ const BestColection = () => {
 
 
     return (
-        <div className="pt-24 px-2 lg:px-20 2xl:px-32 bg-[#fae5e6] relative">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-4 sm:space-y-0">
+        <div className="best-collection">
+            <div className="collection-title">
                 <h2>Best Collection</h2>
 
                 <button className="btn-not-fill">All Collection</button>
             </div>
 
 
+            {/* flower slide 
+            ------------------------ */}
             <div className="">
 
                 <Swiper
@@ -50,8 +52,8 @@ const BestColection = () => {
                 >
 
                     <SwiperSlide>
-                        <div className="rounded-2xl w-fit p-9 relative ">
-                            <div className="w-36 md:w-52 h-60 md:h-72 mb-5">
+                        <div className="collection-flower-card ">
+                            <div className="c-flower-card-img ">
                                 <img src={tr} alt="" className='object-contain'/>
                             </div>
 
@@ -67,8 +69,8 @@ const BestColection = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="rounded-2xl w-fit p-9 relative ">
-                            <div className="w-36 md:w-52 h-60 md:h-72 mb-5">
+                        <div className="collection-flower-card ">
+                            <div className="c-flower-card-img">
                                 <img src={t} alt="" className='object-contain'/>
                             </div>
 
@@ -82,8 +84,8 @@ const BestColection = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="rounded-2xl w-fit p-9 relative ">
-                            <div className="w-36 md:w-52 h-60 md:h-72 mb-5">
+                        <div className="collection-flower-card ">
+                            <div className="c-flower-card-img">
                                 <img src={r} alt="" className='object-contain'/>
                             </div>
 
@@ -99,8 +101,8 @@ const BestColection = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="rounded-2xl w-fit p-9 relative ">
-                            <div className="w-36 md:w-52 h-60 md:h-72 mb-5">
+                        <div className="collection-flower-card ">
+                            <div className="c-flower-card-img">
                                 <img src={sun} alt="" className='object-contain'/>
                             </div>
 
@@ -117,8 +119,8 @@ const BestColection = () => {
                     </SwiperSlide>
                    
                     <SwiperSlide>
-                        <div className="rounded-2xl w-fit p-9 relative ">
-                            <div className="w-36 md:w-52 h-60 md:h-72 mb-5">
+                        <div className="collection-flower-card ">
+                            <div className="c-flower-card-img">
                                 <img src={wr} alt="" className='object-contain'/>
                             </div>
 
@@ -132,8 +134,8 @@ const BestColection = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="rounded-2xl w-fit p-9 relative ">
-                            <div className="w-36 md:w-52 h-60 md:h-72 mb-5">
+                        <div className="collection-flower-card ">
+                            <div className="c-flower-card-img">
                                 <img src={m} alt="" className='object-contain'/>
                             </div>
 

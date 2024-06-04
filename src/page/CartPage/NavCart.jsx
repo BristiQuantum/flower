@@ -14,32 +14,35 @@ const NavCart = ({setCart}) => {
         setCart(false)
     }
     return (
-        <div className=" px-1 sm:px-9 pb-5 pt-10 border-b-8 border-b-[#911C32] border-l-8 border-l-[#911C32] rounded-bl-3xl bg-[#fef2f2] z-50">
-            <h2 className="border-b-2 pb-1 text-center">This is your cart</h2>
+        <div className="navcart">
+            <h2 className="nav-cart-title">This is your cart</h2>
 
             <div className="space-y-12 mt-12">
 
-                <div onClick={clearCart} className="flex gap-5 py-3 items-center sm:px-9 shadow-md rounded-2xl ">
+
+                {/* cart content 
+                ------------------------ */}
+                <div onClick={clearCart} className="cart-container ">
                     <img src={img1} alt="" className='w-28 h-20 object-contain' />
                     <div className="self-start">
                         <h3>Tuilip Rose </h3>
                         <p>$56</p>
                     </div>
-                    <div className="  h-fit w-fit  flex items-center gap-2 self-start">
+                    <div className="nav-cart-icon">
                         <FaMinus className='text-xs' />
-                        <h3 className='text-lg border-2 px-3 border-[#911C32]'>2</h3>
+                        <h3 className='nav-cart-q'>2</h3>
                         <FaPlus className='text-xs' />
                     </div>
                 </div>
-                <div onClick={clearCart} className="flex gap-5 py-3 items-center sm:px-9 shadow-md rounded-2xl ">
+                <div onClick={clearCart} className="cart-container">
                     <img src={img2} alt="" className='w-28 h-20 object-contain' />
                     <div className="self-start">
                         <h3>Flower Title </h3>
                         <p>$65</p>
                     </div>
-                    <div className="  h-fit w-fit self-start  flex items-center gap-2">
+                    <div className="nav-cart-icon">
                         <FaMinus className='text-xs' />
-                        <h3 className='text-lg border-2 px-3 border-[#911C32]'>3</h3>
+                        <h3 className='nav-cart-q'>3</h3>
                         <FaPlus className='text-xs' />
                     </div>
                 </div>

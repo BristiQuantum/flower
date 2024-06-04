@@ -62,27 +62,269 @@ body {
     .badge-new {
         @apply badge-best bg-[#F77794]
     }
-
+    .badge-sell {
+      @apply badge-best bg-[#f34040]
+  }
+  .social-icon {
+    @apply bg-[#8B1128] text-white text-3xl p-1 rounded-full transition-all ease-in-out hover:bg-transparent hover:text-[#8B1128] border-2 border-[#8B1128] duration-300 cursor-pointer
+  }
 
 
     /* nav bar 
     ---------------------- */
     .navbar{
-      @apply header-title font-semibold
+      @apply header-title font-semibold fixed top-0 z-50 w-full px-2 lg:px-16 2xl:px-20 bg-transparent text-[#911C32] transition-colors duration-300
     }
     .logo {
       @apply font-['Tangerine',_cursive];
     }
+    .navbar-links{
+      @apply pl-5 text-2xl lg:text-base py-5 transition-all ease-in-out hover:text-[#EC4899]
+    }
+    .menu-icon{
+      @apply menu h-72 bg-[#F6D1D3] menu-sm dropdown-content mt-3 z-[1] shadow rounded-box w-52
+    }
+    .logo {
+      @apply font-extrabold text-xl
+    }
 
-    
+    /* home page 
+    =========================== */
+
+    /* home 
+    --------------- */
+    .home{
+      @apply px-2 sm:px-8 md:px-32 lg:pt-24 pb-5 flex justify-end items-end bg-fixed
+    }
+    .home-icon {
+      @apply flex items-center gap-2
+    }
 
 
+    /* best collection 
+    ------------------------ */
+    .best-collection {
+      @apply pt-24 px-2 lg:px-20 2xl:px-32 bg-[#fae5e6] relative
+    }
+    .collection-title{
+      @apply flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-4 sm:space-y-0
+    }
+    .collection-flower-card {
+      @apply rounded-2xl w-fit p-9 relative
+    }
+    .c-flower-card-img {
+      @apply w-36 md:w-52 h-60 md:h-72 mb-5
+    }
+
+    /* about 
+    ----------------- */
+    .about {
+      @apply px-2 pt-24 lg:px-20 bg-[#EABABA] 2xl:px-32 flex flex-col md:flex-row gap-9  relative
+    }
+    .about-img-box {
+      @apply relative w-[270px] h-[320px] sm:w-[400px] sm:h-[480px] ml-auto md:mx-0
+    }
+    .about-img1{
+      @apply w-52 sm:w-80 sm:h-96  border-[12px] border-white bg-[#E8E8EA] absolute top-0 left-0 z-40
+    }
+
+    .about-img2{
+      @apply w-32 sm:w-48 sm:h-56 border-[12px] border-white bg-[#E8E8EA]  absolute right-0 bottom-0 z-40
+    }
+    .about-grafix1 {
+      @apply absolute bottom-16 right-0 w-16 h-16 -rotate-180 z-40
+    }
+    .about-grafix2 {
+      @apply absolute bottom-0 right-5 w-20 h-20  z-40
+    }
 
 
+    /* best selling 
+    ------------------ */
+    .best-selling{
+      @apply px-2 lg:px-20 2xl:px-32 pb-16 pt-52 md:pt-64 bg-[#F2DCDC] sm:-mt-44
+    }
+    .selling-title{
+      @apply flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-4 sm:space-y-0 z-50
+    }
+.selling-slider {
+  @apply grid grid-cols-1 md:grid-cols-3  lg:grid-cols-4 gap-8 mt-9
+}
+.selling-slider-container{
+  @apply rounded-2xl w-fit p-6 relative shadow-sm transition-all ease-in-out hover:shadow-xl duration-300 mx-auto
+}
+.s-img-box {
+  @apply sm:w-36 md:w-52 h-60 md:h-64 mb-5
+}
 
 
+.subscribe{
+  @apply px-2 lg:px-20 2xl:px-32 py-16 bg-[#eababa]
+}
+.subscribe-title{
+  @apply flex flex-col lg:flex-row lg:items-center gap-9
+}
+.s-input{
+  @apply box-border mr-3 p-3 border border-[#eababa] rounded-sm text-sm focus:outline-none font-semibold flex-grow
+}
+.subsribe-btn{
+  @apply btn-not-fill rounded-sm w-fit
+}
+.input-container{
+  @apply flex flex-col sm:flex-row space-y-3 sm:space-y-0
+}
+.subscribe-text{
+  @apply text-[#8B1128] border-b border-[#8B1128] hover:text-black cursor-pointer
+}
+
+/* footer 
+------------------ */
+.footer-content{
+  @apply footer px-8 bg-[#fae5e6] text-base-content
+}
+.f1-container{
+  @apply link link-hover flex items-center gap-1 mt-2
+}
+.f1-container-icon{
+  @apply text-[#f1adb0] text-base
+}
+.f-social-container{
+  @apply flex items-center gap-2 mt-2
+}
+.fotter-links{
+  @apply link link-hover
+}
+.footer-gallery{
+  @apply grid grid-cols-2 md:grid-cols-3 gap-2 w-full md:w-fit
+}
+.f-gallery-container{
+  @apply w-full h-32 md:w-20 md:h-20  overflow-hidden
+}
+.f-gallery-img{
+  @apply w-full h-full object-cover object-center transition-transform duration-500 ease-in-out transform hover:scale-125 cursor-pointer
+}
+.copyrighr{
+  @apply text-center mt-6 pt-6 border-t border-[#8B1128] px-4 md:px-0
+}
+.f-grafix-1{
+  @apply w-10 sm:w-16 h-10 sm:h-16 absolute bottom-0 right-0
+}
+.f-grafix-2{
+  @apply w-7 sm:w-11 h-7 sm:h-11 absolute bottom-11 right-11
+}
+.f-grafix-3{
+  @apply w-8 h-8 absolute bottom-3 right-20
+}
+.f-grafix-4{
+  @apply w-7 h-7 absolute bottom-12 sm:left-52
+}
 
 
+/* cart page 
+========================== */
 
+/* navigation cart 
+------------------------- */
+.navcart{
+  @apply px-1 sm:px-9 pb-5 pt-10 border-b-8 border-b-[#911C32] border-l-8 border-l-[#911C32] rounded-bl-3xl bg-[#fef2f2] z-50
+}
+.nav-cart-title{
+  @apply border-b-2 pb-1 text-center
+}
+.cart-container{
+  @apply flex gap-5 py-3 items-center sm:px-9 shadow-md rounded-2xl
+}
+.nav-cart-icon {
+  @apply h-fit w-fit  flex items-center gap-2 self-start
+}
+.nav-cart-q{
+  @apply text-lg border-2 px-3 border-[#911C32]
+}
+.cart {
+  @apply px-2 md:px-16 lg:px-32 py-24 bg-[#EABABA]
+}
+.cart-flex {
+  @apply flex flex-col xl:flex-row gap-7 xl:gap-0 mt-5 xl:mt-0
+}
+.cart-tr{
+  @apply border-b border-b-[#8B1128] flex gap-4 items-center justify-end
+}
+.cart-title {
+  @apply text-[#8B1128] text-xs sm:text-sm text-nowrap
+}
+.cart-text {
+  @apply font-bold text-xs sm:text-base
+}
+.cart-q{
+  @apply cart-text border w-fit p-2 border-[#8B1128]
+}
+
+.cart-button {
+  @apply w-full text-right mt-12 pr-5 sm:pr-0
+}
+.calculate {
+  @apply border-b border-b-[#911C32] hover:text-[#911C32] pb-1
+}
+.shipping-content {
+  @apply flex flex-col items-end text-sm font-semibold
+}
+.shipping-raio{
+  @apply flex items-center gap-1
+}
+.shipping{
+  @apply py-4 border-b border-b-[#911C32] flex justify-between
+}
+.sub {
+  @apply py-4 border-b border-b-[#911C32] flex justify-between
+}
+.cart-total {
+  @apply py-4 border-b border-b-[#911C32]
+}
+.cart-devider{
+  @apply divider lg:divider-horizontal hidden xl:flex
+}
+
+
+/* all flower page 
+============================ */
+.flower-drawer{
+  @apply drawer-content flex flex-col items-start justify-start lg:ml-9 space-y-9
+}
+.all-flower{
+  @apply px-2 xl:pl-32  pt-24 flex
+}
+.tranding{
+  @apply flex items-center gap-4 justify-end sm:pr-12 mb-4
+}
+.flower-slider{
+  @apply grid grid-cols-2 sm:grid-cols-3 justify-center
+}
+.flower-container{
+  @apply rounded-2xl w-fit p-9 relative 
+}
+.img-container{
+  @apply sm:w-36 md:w-52 h-32 sm:h-60 md:h-72  mb-5
+}
+.padination-btn{
+  @apply join-item btn btn-square bg-[#F77794] border-[#8B1128] text-white hover:bg-[#5d252e] hover:border-[#8B1128]
+}
+.pagination-container{
+  @apply pb-8 hidden sm:block w-full text-center sm:text-right sm:pr-32
+}
+.sidebar-container{
+  @apply menu space-y-7  px-8  w-80 min-h-full bg-[#EABABA] text-base-content
+}
+.title-box{
+  @apply label justify-start gap-1 cursor-pointer
+}
+.chect-style{
+  @apply checkbox checkbox-primary bg-white border-[#EABABA] rounded-sm w-4 h-4
+}
+.sidebar-content{
+  @apply flex flex-col items-start pl-6
+}
+.subtitle-option{
+  @apply label-text text-sm
+}
 
 }
