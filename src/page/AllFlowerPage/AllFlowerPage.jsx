@@ -17,7 +17,7 @@ const AllFlowerPage = () => {
                 <div className="flower-drawer">
                     {/* Page content here */}
 
-                    <div className="">
+                    <div className="text-nowrap">
                         <p className="text-sm text-gray-400">Home <span className="px-2">/</span> All Flower <span className="px-2">/</span> <span className="font-bold text-base ">Flower</span></p>
                     </div>
 

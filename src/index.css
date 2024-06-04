@@ -11,20 +11,8 @@ body {
 }
 
 @layer components {
-  /* =======================================
-
-
-        1. common css
-        2. reuseable css
-
-    
-    
-    ==========================================*/
-
-  /* 1. common css 
+  /*  common css 
     ------------------------- */
-  /* font-family: "Lato", sans-serif;
-    font-family: "Playfair Display", serif; */
   body {
     @apply font-[Lato] m-0 p-0 box-border text-base bg-[#fae5e6] text-[#646464];
   }
@@ -35,7 +23,7 @@ body {
     @apply w-full h-full object-cover
   }
 
-  /* 2. reuseable css 
+  /* reuseable css 
     -------------------------- */
 
     h6 {
@@ -125,11 +113,11 @@ body {
       @apply relative w-[270px] h-[320px] sm:w-[400px] sm:h-[480px] ml-auto md:mx-0
     }
     .about-img1{
-      @apply w-52 sm:w-80 sm:h-96  border-[12px] border-white bg-[#E8E8EA] absolute top-0 left-0 z-40
+      @apply w-52 sm:w-80 h-72 sm:h-96  border-[12px] border-white bg-[#E8E8EA] absolute top-0 left-0 z-40
     }
 
     .about-img2{
-      @apply w-32 sm:w-48 sm:h-56 border-[12px] border-white bg-[#E8E8EA]  absolute right-0 bottom-0 z-40
+      @apply w-32 sm:w-48 h-40 sm:h-56 border-[12px] border-white bg-[#E8E8EA]  absolute right-0 bottom-0 z-40
     }
     .about-grafix1 {
       @apply absolute bottom-16 right-0 w-16 h-16 -rotate-180 z-40
