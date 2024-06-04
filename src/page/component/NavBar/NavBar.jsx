@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import NavCart from "../../CartPage/NavCart";
 
 const NavBar = () => {
+  
   const [open, setOpen] = useState(false)
   const [cart, setCart] = useState(false)
 
@@ -29,8 +30,8 @@ const NavBar = () => {
   const navList = (
     <>
       <li><Link to="/" className="pl-5 text-2xl lg:text-base py-5 transition-all ease-in-out hover:text-[#EC4899]">Home</Link></li>
-      <li><Link to="/" className="pl-5 text-2xl lg:text-base py-5 transition-all ease-in-out hover:text-[#EC4899]">Flowers</Link></li>
-      <li><Link to="/" className="pl-5 text-2xl lg:text-base py-5 transition-all ease-in-out hover:text-[#EC4899] block lg:hidden">Cart</Link></li>
+      <li><Link to="/" className="pl-5 text-2xl lg:text-base py-5 transition-all ease-in-out hover:text-[#EC4899]">All Flowers</Link></li>
+      <li><Link to="/cart" className="pl-5 text-2xl lg:text-base py-5 transition-all ease-in-out hover:text-[#EC4899] " >Cart</Link></li>
     </>
   );
 
@@ -70,7 +71,7 @@ const NavBar = () => {
 
       {/* cart content  */}
       <div className={`absolute right-0 top-16 ${cart ? 'block' : 'hidden'}`}>
-        <NavCart></NavCart>
+        <NavCart setCart={setCart}></NavCart>
       </div>
     </div>
   );

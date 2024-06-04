@@ -53,6 +53,9 @@ body {
     .btn-not-fill {
         @apply border-2 border-[#8B1128] text-[#8B1128] font-semibold header-title text-xs sm:text-sm py-2 px-7 transition-all ease-in-out hover:bg-[#8B1128] hover:text-white duration-300 cursor-pointer z-40
     }
+    .btn-fill {
+      @apply border-2 border-[#8B1128] text-white font-semibold header-title text-xs sm:text-sm py-2 px-7 bg-[#8B1128] transition-all ease-in-out hover:bg-transparent hover:text-[#8B1128]  duration-300 cursor-pointer z-40
+  }
     .badge-best {
         @apply bg-[#8B1128] text-white  text-[11px] md:text-xs w-9 sm:w-12 h-9 sm:h-12 p-3 rounded-full flex justify-center items-center header-title absolute top-0 right-0
     }

@@ -22,8 +22,8 @@ const About = () => {
             </div>
 
 
-            <img src={bg} alt="" className='absolute bottom-16 right-0 w-16 h-16 -rotate-180 z-50'/>
-            <img src={bg} alt="" className='absolute bottom-0 right-5 w-20 h-20  z-50'/>
+            <img src={bg} alt="" className='absolute bottom-16 right-0 w-16 h-16 -rotate-180 z-40'/>
+            <img src={bg} alt="" className='absolute bottom-0 right-5 w-20 h-20  z-40'/>
 
         </div>
     );
