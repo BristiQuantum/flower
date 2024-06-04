@@ -2,6 +2,7 @@ import { CiMail } from "react-icons/ci";
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import { HiOutlinePhoneMissedCall } from "react-icons/hi";
 import { IoLocationOutline } from "react-icons/io5";
+import r from '../../../assets/grafix/hg2.png'
 
 const Footer = () => {
   return (
@@ -103,6 +104,11 @@ const Footer = () => {
         Copyright © 2006 - 2024 Bristi Online Ltd. All Rights Reserved. Bristi
         Online ltd, Flowers HQ, Mirpur 12, Dhaka 1212
       </h4>
+
+      <img src={r} alt="" className="w-16 h-16 absolute bottom-0 right-0"/>
+      <img src={r} alt="" className="w-11 h-11 absolute bottom-11 right-11"/>
+      <img src={r} alt="" className="w-8 h-8 absolute bottom-3 right-20"/>
+      <img src={r} alt="" className="w-7 h-7 absolute bottom-12 left-52"/>
     </div>
   );
 };
